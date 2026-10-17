@@ -8,7 +8,7 @@ The answer here is no.
 With the same model, removing all message passing (0 hops) gives the best R², and LightGBM on a flat table beats every graph model.
 A controlled ablation shows why: the signal is autoregressive (an article's own past sales), not relational.
 
-**[Team report](docs/team_report.pdf)** (22 pages, my part: sections 3.6 and 4.5) · **[Slides](docs/slides.pdf)**
+**[Team report](docs/team_report.pdf)** (24 pages, my part: sections 3.6 and 4.6) · **[Slides](docs/slides.pdf)**
 
 ## Data and task
 
