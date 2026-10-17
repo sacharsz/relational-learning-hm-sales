@@ -22,7 +22,7 @@ Models are trained on weeks from 2019-09-09 to 2020-08-31 and evaluated on the o
 - **Persistence**: next week's sales = this week's sales.
 - **LightGBM** on a flat table: article attributes, calendar features and sales lags.
 - **HeteroSAGE**: a heterogeneous GraphSAGE on the customer-article graph, with a skip connection that feeds the article's own sales lags directly to the prediction head.
-  The full graph (12.86 M customer-article pairs) does not fit on a 16 GB P100, so each article keeps its 30 most recent buyers (1.31 M edges).
+  The full graph (12.86 M customer-article pairs) does not fit on a 16 GB P100, so each article keeps 30 of its buyers, drawn at random with a new draw for each seed (1.31 M edges).
 
 ## Results
 
